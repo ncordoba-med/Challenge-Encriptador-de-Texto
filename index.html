@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="header__logo" src="./assets/Logo.png" alt="imagen del logo">
+        </div>
+    </header>
+    <main class="desafio">
+        <div class="desafio__areatexto">
+            <div class="desafio__areatexto__entrada">
+                <textarea id="desafioAreaTextoEntradaCuadroTexto" class="desafio__areatexto__entrada__cuadrotexto" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="desafio__areatexto__entrada__inferior">
+                    <img class="desafio__areatexto__imagensignoexclamacion" src="./assets/bi_exclamation-circle-fill.png" alt="imagen signo de exclamacion para advertencia">
+                    <span class="advertencia">Solo letras minúsculas y sin acentos</span>
+                    <div class="desafio__areatexto__botones">
+                        <button id="desafioAreatextoBotonesEncriptar" class="desafio__areatexto__botones__encriptar">Encriptar</button>
+                        <button id="desafioAreatextoBotonesDesencriptar" class="desafio__areatexto__botones__desencriptar">Desencriptar</button>
+                    </div>
+                </div>                
+            </div> 
+            <div id="desafioAreatextoSalida" class="desafio__areatexto__salida resultado">
+                <img id="desafioAreatextoSalidaImagen" class="desafio__areatexto__salida__imagen" src="./assets/Muñeco.png" alt="imagen de inicio">
+                <textarea id="salida" class="salida" placeholder="Ningún mensaje fue encontrado"></textarea> 
+                <p id="textoInformativo" class="texto__informativo">Ingresa el texto que desees encriptar o desencriptar</p>
+                <button id="botonCopiar" class="boton__copiar oculto">Copiar</button>
+            </div>            
+        </div>
+            
+    </main>
+</body>
+
+<script src="script.js"></script>
+
+</html>
+

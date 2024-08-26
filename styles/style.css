@@ -1,0 +1,225 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --fuente-inter: "Inter", sans-serif;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    list-style-type: none;
+    background-color: #f3f5fc ;
+}
+
+header{
+    background-color: #f3f5fc;
+}
+
+.header{
+    background-color: #f3f5fc;
+    width: 97%;
+    margin: auto;
+}
+
+.header__logo{
+    margin-top: 40px;
+}
+
+.desafio__areatexto{
+    background-color: #f3f5fc;
+    width: 83%;
+    margin: auto 40px auto auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: calc(100vh - 91px - 72px) ;
+    align-items: end;
+}
+
+.desafio__areatexto__entrada{
+    background-color: #f3f5fc ;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.desafio__areatexto__entrada__cuadrotexto{
+    width: 80%;
+    font-family: var(--fuente-inter);
+    font-size: 32px;
+    color: #0a3871;
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.desafio__areatexto__entrada__cuadrotexto::placeholder{
+    color: #0a3871;
+}
+
+.desafio__areatexto__botones{
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.advertencia{
+    color: #495057;
+    font-family: var(--fuente-inter);
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.desafio__areatexto__botones__encriptar{
+    max-width: 328px;
+    width: 40%;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #0a3871;
+    color: #ffffff;
+    font-family: var(--fuente-inter);
+    font-weight: 400;    
+    font-size: 16px;
+    border: 1px solid #0a3871;
+}
+
+.desafio__areatexto__botones__desencriptar{
+    max-width: 328px;
+    width: 40%;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #d8dfe8;
+    color: #0a3871;
+    font-family: var(--fuente-inter);
+    font-weight: 400;    
+    font-size: 16px;
+    border: 1px solid #0a3871;
+}
+
+.desafio__areatexto__salida{
+    background-color: #ffffff;
+    height: calc(100% + 48px);
+    border-radius: 32px;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08); 
+}
+
+.desafio__areatexto__salida.resultado{
+    justify-content: space-between;
+}
+
+.desafio__areatexto__salida__imagen{
+    width: 100%;
+}
+
+.salida{
+    font-family: var(--fuente-inter);
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #343a40;
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.salida::placeholder{
+    color: #343a40;
+}
+
+.salida.resultado{
+    text-align: left;
+    font-weight: 400;
+    height: 70%;
+    color: #495057;
+}
+
+.salida.resultado::placeholder{
+    color: #343a40;
+    font-weight: bold;
+    resize: none;
+    text-align: center;
+}
+
+.texto__informativo{
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    font-size: 16px;
+    color: #495057;
+    text-align: center;
+}
+
+.boton__copiar{
+    max-width: 328px;
+    width: 100%;
+    height: 67px;
+    border-radius: 24px;
+    background: transparent;
+    color: #0a3871;
+    font-family: var(--fuente-inter);
+    font-weight: 400;    
+    font-size: 16px;
+    border: 1px solid #0a3871;
+    display: none;
+}
+
+.oculto{
+   display: none; 
+}
+
+@media screen and (max-width: 800px) {
+    .desafio__areatexto{
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% 25%;
+        width: auto;
+        margin: auto 40px;
+    }
+    .desafio__areatexto__salida{
+        height: 100%;
+    }
+    .desafio__areatexto__salida__imagen{
+        display: none;
+    }
+    .desafio__areatexto__botones{
+        justify-content: center;
+    }
+    .desafio__areatexto__botones__encriptar{
+        width: 50%;
+    }
+    .desafio__areatexto__botones__desencriptar{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .desafio__areatexto{
+        margin: auto 16px;
+    }
+    .desafio__areatexto__botones__encriptar{
+        max-width: 100%;
+        width: 100%;
+    }
+    .desafio__areatexto__botones__desencriptar{
+        max-width: 100%;
+        width: 100%;
+    }
+}
